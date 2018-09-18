@@ -1,0 +1,2409 @@
+947   read(0</dev/tty1>, "\r", 1)       = 1
+947   write(2</dev/tty1>, "\n", 1)      = 1
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   pipe([3<pipe:[25490]>, 4<pipe:[25490]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [CHLD], 8) = 0
+947   pipe([5<pipe:[25491]>, 6<pipe:[25491]>]) = 0
+947   clone( <unfinished ...>
+2270  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2270  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2270  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2270  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2270  setpgid(2270, 2270)               = 0
+2270  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+2270  ioctl(255</dev/tty1>, TIOCSPGRP, [2270]) = 0
+2270  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2270  close(6<pipe:[25491]>)            = 0
+2270  read(5<pipe:[25491]>,  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2270
+947   setpgid(2270, 2270)               = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   close(4<pipe:[25490]>)            = 0
+947   close(4)                          = -1 EBADF (Bad file descriptor)
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [CHLD], 8) = 0
+947   clone( <unfinished ...>
+2271  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2271  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2271  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2271  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2271  setpgid(2271, 2270)               = 0
+2271  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+2271  ioctl(255</dev/tty1>, TIOCSPGRP, [2270]) = 0
+2271  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2271  close(5<pipe:[25491]>)            = 0
+2271  close(6<pipe:[25491]>)            = 0
+2271  dup2(3<pipe:[25490]>, 0</dev/tty1>) = 0<pipe:[25490]>
+2271  close(3<pipe:[25490]>)            = 0
+2271  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2271  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2271  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2271  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2271  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2271  execve("./count_keystroke", ["./count_keystroke"], [/* 22 vars */]) = 0
+2271  brk(NULL)                         = 0x602000
+2271  fcntl(0<pipe:[25490]>, F_GETFD)   = 0
+2271  fcntl(1</dev/tty1>, F_GETFD)      = 0
+2271  fcntl(2</dev/tty1>, F_GETFD)      = 0
+2271  access("/etc/suid-debug", F_OK)   = -1 ENOENT (No such file or directory)
+2271  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2271  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2271  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2271  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2271  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2271  close(3</etc/ld.so.cache>)        = 0
+2271  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2271  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2271  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2271  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2271  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2271  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+2271  mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+2271  mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+2271  mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+2271  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2271  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2271  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2271  arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+2271  mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+2271  mprotect(0x600000, 4096, PROT_READ) = 0
+2271  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2271  munmap(0x7ffff7fee000, 35038)     = 0
+2271  fstat(1</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+2271  ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+2271  brk(NULL)                         = 0x602000
+2271  brk(0x624000)                     = 0x624000
+2271  read(0<pipe:[25490]>,  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2271
+947   setpgid(2271, 2270)               = -1 EACCES (Permission denied)
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   close(3<pipe:[25490]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+947   close(5<pipe:[25491]>)            = 0
+947   close(6<pipe:[25491]> <unfinished ...>
+2270  <... read resumed> "", 1)         = 0
+2270  close(5<pipe:[25491]>)            = 0
+2270  close(3<pipe:[25490]>)            = 0
+2270  dup2(4<pipe:[25490]>, 1</dev/tty1>) = 1<pipe:[25490]>
+2270  close(4<pipe:[25490]>)            = 0
+2270  stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2270  stat("/home/user/bin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/home/user/.local/bin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/usr/local/sbin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/usr/local/bin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/usr/sbin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/usr/bin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/sbin/cat", 0x7ffe93d47c70) = -1 ENOENT (No such file or directory)
+2270  stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+2270  stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+2270  geteuid()                         = 1000
+2270  getegid()                         = 1000
+2270  getuid()                          = 1000
+2270  getgid()                          = 1000
+2270  access("/bin/cat", X_OK)          = 0
+2270  stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+2270  geteuid()                         = 1000
+2270  getegid()                         = 1000
+2270  getuid()                          = 1000
+2270  getgid()                          = 1000
+2270  access("/bin/cat", R_OK)          = 0
+2270  stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+2270  stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+2270  geteuid()                         = 1000
+2270  getegid()                         = 1000
+2270  getuid()                          = 1000
+2270  getgid()                          = 1000
+2270  access("/bin/cat", X_OK)          = 0
+2270  stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+2270  geteuid()                         = 1000
+2270  getegid()                         = 1000
+2270  getuid()                          = 1000
+2270  getgid()                          = 1000
+2270  access("/bin/cat", R_OK)          = 0
+2270  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2270  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2270  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2270  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2270  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2270  execve("/bin/cat", ["cat"], [/* 22 vars */]) = 0
+2270  brk(NULL)                         = 0x60d000
+2270  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2270  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2270  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2270  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2270  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2270  close(3</etc/ld.so.cache>)        = 0
+2270  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2270  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2270  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2270  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2270  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2270  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+2270  mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+2270  mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+2270  mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+2270  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2270  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2270  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2270  arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+2270  mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+2270  mprotect(0x60b000, 4096, PROT_READ) = 0
+2270  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2270  munmap(0x7ffff7fee000, 35038)     = 0
+2270  brk(NULL)                         = 0x60d000
+2270  brk(0x62e000)                     = 0x62e000
+2270  open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+2270  fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+2270  mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+2270  close(3</usr/lib/locale/locale-archive>) = 0
+2270  fstat(1<pipe:[25490]>, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+2270  fstat(0</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+2270  fadvise64(0</dev/tty1>, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+2270  mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fc9000
+2270  read(0</dev/tty1>,  <unfinished ...>
+947   <... close resumed> )             = 0
+947   ioctl(255</dev/tty1>, TIOCGPGRP, [2270]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0
+947   wait4(-1,  <unfinished ...>
+2270  <... read resumed> "abcdefg\n", 131072) = 8
+2270  write(1<pipe:[25490]>, "abcdefg\n", 8 <unfinished ...>
+2271  <... read resumed> "abcdefg\n", 400) = 8
+2271  write(1</dev/tty1>, "Try to exec /bin/sh\n", 20) = 20
+2271  write(1</dev/tty1>, "Read 8 bytes. buf is abcdefg\n", 29) = 29
+2271  write(1</dev/tty1>, "\n", 1)      = 1
+2271  write(1</dev/tty1>, "No shell for you:(\n", 19) = 19
+2271  exit_group(0)                     = ?
+2271  +++ exited with 0 +++
+2270  <... write resumed> )             = 8
+2270  read(0</dev/tty1>,  <unfinished ...>
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2271
+947   wait4(-1,  <unfinished ...>
+2270  <... read resumed> "\n", 131072)  = 1
+2270  write(1<pipe:[25490]>, "\n", 1)   = -1 EPIPE (Broken pipe)
+2270  --- SIGPIPE {si_signo=SIGPIPE, si_code=SI_USER, si_pid=2270, si_uid=1000} ---
+2270  +++ killed by SIGPIPE +++
+947   <... wait4 resumed> [{WIFSIGNALED(s) && WTERMSIG(s) == SIGPIPE}], WSTOPPED|WCONTINUED, NULL) = 2270
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   close(3)                          = -1 EBADF (Bad file descriptor)
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2271, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d478d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   stat("/var/mail/user", 0x7ffe93d47290) = -1 ENOENT (No such file or directory)
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+947   rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+947   read(0</dev/tty1>, "t", 1)        = 1
+947   write(2</dev/tty1>, "t", 1)       = 1
+947   read(0</dev/tty1>, "o", 1)        = 1
+947   write(2</dev/tty1>, "o", 1)       = 1
+947   read(0</dev/tty1>, "u", 1)        = 1
+947   write(2</dev/tty1>, "u", 1)       = 1
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "m", 1)        = 1
+947   write(2</dev/tty1>, "m", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, "i", 1)        = 1
+947   write(2</dev/tty1>, "i", 1)       = 1
+947   read(0</dev/tty1>, "n", 1)        = 1
+947   write(2</dev/tty1>, "n", 1)       = 1
+947   read(0</dev/tty1>, "e", 1)        = 1
+947   write(2</dev/tty1>, "e", 1)       = 1
+947   read(0</dev/tty1>, "_", 1)        = 1
+947   write(2</dev/tty1>, "_", 1)       = 1
+947   read(0</dev/tty1>, "i", 1)        = 1
+947   write(2</dev/tty1>, "i", 1)       = 1
+947   read(0</dev/tty1>, "n", 1)        = 1
+947   write(2</dev/tty1>, "n", 1)       = 1
+947   read(0</dev/tty1>, "f", 1)        = 1
+947   write(2</dev/tty1>, "f", 1)       = 1
+947   read(0</dev/tty1>, "o", 1)        = 1
+947   write(2</dev/tty1>, "o", 1)       = 1
+947   read(0</dev/tty1>, ".", 1)        = 1
+947   write(2</dev/tty1>, ".", 1)       = 1
+947   read(0</dev/tty1>, "t", 1)        = 1
+947   write(2</dev/tty1>, "t", 1)       = 1
+947   read(0</dev/tty1>, "x", 1)        = 1
+947   write(2</dev/tty1>, "x", 1)       = 1
+947   read(0</dev/tty1>, "t", 1)        = 1
+947   write(2</dev/tty1>, "t", 1)       = 1
+947   read(0</dev/tty1>, "\r", 1)       = 1
+947   write(2</dev/tty1>, "\n", 1)      = 1
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([3<pipe:[25534]>, 4<pipe:[25534]>]) = 0
+947   clone( <unfinished ...>
+2272  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2272
+2272  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   setpgid(2272, 2272 <unfinished ...>
+2272  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... setpgid resumed> )           = 0
+2272  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2272  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2272  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2272  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> [], 8) = 0
+2272  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   close(3<pipe:[25534]> <unfinished ...>
+2272  setpgid(2272, 2272 <unfinished ...>
+947   <... close resumed> )             = 0
+2272  <... setpgid resumed> )           = 0
+947   close(4<pipe:[25534]> <unfinished ...>
+2272  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU],  <unfinished ...>
+947   <... close resumed> )             = 0
+2272  <... rt_sigprocmask resumed> [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCGPGRP <unfinished ...>
+2272  ioctl(255</dev/tty1>, TIOCSPGRP, [2272] <unfinished ...>
+947   <... ioctl resumed> , [947])      = 0
+2272  <... ioctl resumed> )             = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU],  <unfinished ...>
+2272  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... rt_sigprocmask resumed> [CHLD], 8) = 0
+2272  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [2272] <unfinished ...>
+2272  close(4<pipe:[25534]> <unfinished ...>
+947   <... ioctl resumed> )             = 0
+2272  <... close resumed> )             = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+2272  read(3<pipe:[25534]>,  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2272  <... read resumed> "", 1)         = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2272  close(3<pipe:[25534]> <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2272  <... close resumed> )             = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2272  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> [], 8) = 0
+2272  <... rt_sigaction resumed> NULL, 8) = 0
+947   wait4(-1,  <unfinished ...>
+2272  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2272  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2272  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2272  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2272  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2272  execve("/usr/bin/touch", ["touch", "machine_info.txt"], [/* 22 vars */]) = 0
+2272  brk(NULL)                         = 0x610000
+2272  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2272  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2272  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2272  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2272  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2272  close(3</etc/ld.so.cache>)        = 0
+2272  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2272  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2272  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2272  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2272  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2272  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+2272  mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+2272  mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+2272  mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+2272  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2272  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2272  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2272  arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+2272  mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+2272  mprotect(0x60e000, 4096, PROT_READ) = 0
+2272  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2272  munmap(0x7ffff7fee000, 35038)     = 0
+2272  brk(NULL)                         = 0x610000
+2272  brk(0x631000)                     = 0x631000
+2272  open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+2272  fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+2272  mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+2272  close(3</usr/lib/locale/locale-archive>) = 0
+2272  open("machine_info.txt", O_WRONLY|O_CREAT|O_NOCTTY|O_NONBLOCK, 0666) = 3</home/user/test/machine_info.txt>
+2272  dup2(3</home/user/test/machine_info.txt>, 0</dev/tty1>) = 0</home/user/test/machine_info.txt>
+2272  close(3</home/user/test/machine_info.txt>) = 0
+2272  utimensat(0</home/user/test/machine_info.txt>, NULL, NULL, 0) = 0
+2272  close(0</home/user/test/machine_info.txt>) = 0
+2272  close(1</dev/tty1>)               = 0
+2272  close(2</dev/tty1>)               = 0
+2272  exit_group(0)                     = ?
+2272  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2272
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2272, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d478d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+947   rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "t", 1)        = 1
+947   write(2</dev/tty1>, "t", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "u", 1)        = 1
+947   write(2</dev/tty1>, "u", 1)       = 1
+947   read(0</dev/tty1>, "s", 1)        = 1
+947   write(2</dev/tty1>, "s", 1)       = 1
+947   read(0</dev/tty1>, "e", 1)        = 1
+947   write(2</dev/tty1>, "e", 1)       = 1
+947   read(0</dev/tty1>, "r", 1)        = 1
+947   write(2</dev/tty1>, "r", 1)       = 1
+947   read(0</dev/tty1>, "\t", 1)       = 1
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "2", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "2", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25548]>, 4<pipe:[25548]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25549]>, 6<pipe:[25549]>]) = 0
+947   clone( <unfinished ...>
+2274  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2274
+2274  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   setpgid(2274, 947 <unfinished ...>
+2274  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... setpgid resumed> )           = 0
+2274  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2274  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2274  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0},  <unfinished ...>
+2274  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigaction resumed> {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2274  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25549]> <unfinished ...>
+2274  setpgid(2274, 947 <unfinished ...>
+947   <... close resumed> )             = 0
+2274  <... setpgid resumed> )           = 0
+947   close(6<pipe:[25549]> <unfinished ...>
+2274  close(5<pipe:[25549]> <unfinished ...>
+947   <... close resumed> )             = 0
+2274  <... close resumed> )             = 0
+947   close(4<pipe:[25548]> <unfinished ...>
+2274  close(6<pipe:[25549]> <unfinished ...>
+947   <... close resumed> )             = 0
+2274  <... close resumed> )             = 0
+947   read(3<pipe:[25548]>,  <unfinished ...>
+2274  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2274  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2274  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2274  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2274  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2274  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2274  dup2(4<pipe:[25548]>, 1</dev/tty1>) = 1<pipe:[25548]>
+2274  close(4<pipe:[25548]>)            = 0
+2274  close(3<pipe:[25548]>)            = 0
+2274  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2274  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2274  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2274  brk(0x28c3000)                    = 0x28c3000
+2274  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2274  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2274  brk(0x28b3000)                    = 0x28b3000
+2274  close(3</home/user/test>)         = 0
+2274  stat("user_file.txt", {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+2274  exit_group(1)                     = ?
+2274  +++ exited with 1 +++
+947   <... read resumed> "", 128)       = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2274, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+947   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WNOHANG|WSTOPPED|WCONTINUED, NULL) = 2274
+947   wait4(-1, 0x7ffe93d45510, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   close(3<pipe:[25548]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25557]>, 4<pipe:[25557]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25558]>, 6<pipe:[25558]>]) = 0
+947   clone( <unfinished ...>
+2275  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2275
+2275  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   setpgid(2275, 947 <unfinished ...>
+2275  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... setpgid resumed> )           = 0
+2275  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2275  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2275  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0},  <unfinished ...>
+2275  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigaction resumed> {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2275  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25558]> <unfinished ...>
+2275  setpgid(2275, 947 <unfinished ...>
+947   <... close resumed> )             = 0
+2275  <... setpgid resumed> )           = 0
+947   close(6<pipe:[25558]> <unfinished ...>
+2275  close(5<pipe:[25558]> <unfinished ...>
+947   <... close resumed> )             = 0
+2275  <... close resumed> )             = 0
+947   close(4<pipe:[25557]> <unfinished ...>
+2275  close(6<pipe:[25558]> <unfinished ...>
+947   <... close resumed> )             = 0
+2275  <... close resumed> )             = 0
+947   read(3<pipe:[25557]>,  <unfinished ...>
+2275  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2275  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2275  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2275  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2275  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2275  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2275  dup2(4<pipe:[25557]>, 1</dev/tty1>) = 1<pipe:[25557]>
+2275  close(4<pipe:[25557]>)            = 0
+2275  close(3<pipe:[25557]>)            = 0
+2275  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2275  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2275  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2275  brk(0x28c3000)                    = 0x28c3000
+2275  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2275  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2275  brk(0x28b3000)                    = 0x28b3000
+2275  close(3</home/user/test>)         = 0
+2275  write(1<pipe:[25557]>, "user_file.txt\n", 14) = 14
+947   <... read resumed> "user_file.txt\n", 128) = 14
+2275  exit_group(0)                     = ?
+947   read(3<pipe:[25557]>, "", 128)    = 0
+947   close(3<pipe:[25557]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2275  +++ exited with 0 +++
+947   <... rt_sigprocmask resumed> [], 8) = 0
+947   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2275
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2275, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d45310, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   open("/tmp/sh-thd-7797809726659068628", O_WRONLY|O_CREAT|O_EXCL|O_TRUNC, 0600) = 3</tmp/sh-thd-7797809726659068628>
+947   write(3</tmp/sh-thd-7797809726659068628>, "user_file.txt", 13) = 13
+947   write(3</tmp/sh-thd-7797809726659068628>, "\n", 1) = 1
+947   open("/tmp/sh-thd-7797809726659068628", O_RDONLY) = 4</tmp/sh-thd-7797809726659068628>
+947   close(3</tmp/sh-thd-7797809726659068628>) = 0
+947   unlink("/tmp/sh-thd-7797809726659068628") = 0
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(0</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(4</tmp/sh-thd-7797809726659068628 (deleted)>, 0</dev/tty1>) = 0</tmp/sh-thd-7797809726659068628 (deleted)>
+947   close(4</tmp/sh-thd-7797809726659068628 (deleted)>) = 0
+947   ioctl(0</tmp/sh-thd-7797809726659068628 (deleted)>, TCGETS, 0x7ffe93d45bd0) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-7797809726659068628 (deleted)>, 0, SEEK_CUR) = 0
+947   read(0</tmp/sh-thd-7797809726659068628 (deleted)>, "user_file.txt\n", 128) = 14
+947   ioctl(0</tmp/sh-thd-7797809726659068628 (deleted)>, TCGETS, 0x7ffe93d45bd0) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-7797809726659068628 (deleted)>, 0, SEEK_CUR) = 14
+947   read(0</tmp/sh-thd-7797809726659068628 (deleted)>, "", 128) = 0
+947   dup2(10</dev/tty1>, 0</tmp/sh-thd-7797809726659068628 (deleted)>) = 0</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   close(3</dev/null>)               = 0
+947   dup2(10</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   stat("/home/user/test/user_file.txt", {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+947   lstat("user_file.txt", {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+947   write(2</dev/tty1>, "_file.txt ", 10) = 10
+947   read(0</dev/tty1>, ">", 1)        = 1
+947   write(2</dev/tty1>, ">", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "m", 1)        = 1
+947   write(2</dev/tty1>, "m", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, "\t", 1)       = 1
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "4", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "4", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25566]>, 4<pipe:[25566]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25567]>, 6<pipe:[25567]>]) = 0
+947   clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2276
+947   setpgid(2276, 947)                = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25567]>)            = 0
+947   close(6<pipe:[25567]>)            = 0
+947   close(4<pipe:[25566]>)            = 0
+947   read(3<pipe:[25566]>,  <unfinished ...>
+2276  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2276  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  setpgid(2276, 947)                = 0
+2276  close(5<pipe:[25567]>)            = 0
+2276  close(6<pipe:[25567]>)            = 0
+2276  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2276  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2276  dup2(4<pipe:[25566]>, 1</dev/tty1>) = 1<pipe:[25566]>
+2276  close(4<pipe:[25566]>)            = 0
+2276  close(3<pipe:[25566]>)            = 0
+2276  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2276  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2276  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2276  brk(0x28c3000)                    = 0x28c3000
+2276  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2276  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2276  brk(0x28b3000)                    = 0x28b3000
+2276  close(3</home/user/test>)         = 0
+2276  stat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+2276  exit_group(1)                     = ?
+947   <... read resumed> "", 128)       = 0
+947   close(3<pipe:[25566]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   wait4(-1,  <unfinished ...>
+2276  +++ exited with 1 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WSTOPPED|WCONTINUED, NULL) = 2276
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2276, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d44550, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25575]>, 4<pipe:[25575]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25576]>, 6<pipe:[25576]>]) = 0
+947   clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2277
+947   setpgid(2277, 947)                = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25576]>)            = 0
+947   close(6<pipe:[25576]>)            = 0
+947   close(4<pipe:[25575]>)            = 0
+947   read(3<pipe:[25575]>,  <unfinished ...>
+2277  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2277  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  setpgid(2277, 947)                = 0
+2277  close(5<pipe:[25576]>)            = 0
+2277  close(6<pipe:[25576]>)            = 0
+2277  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2277  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2277  dup2(4<pipe:[25575]>, 1</dev/tty1>) = 1<pipe:[25575]>
+2277  close(4<pipe:[25575]>)            = 0
+2277  close(3<pipe:[25575]>)            = 0
+2277  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2277  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2277  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2277  brk(0x28c3000)                    = 0x28c3000
+2277  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2277  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2277  brk(0x28b3000)                    = 0x28b3000
+2277  close(3</home/user/test>)         = 0
+2277  write(1<pipe:[25575]>, "machine_info.txt\n", 17) = 17
+947   <... read resumed> "machine_info.txt\n", 128) = 17
+947   read(3<pipe:[25575]>,  <unfinished ...>
+2277  exit_group(0)                     = ?
+947   <... read resumed> "", 128)       = 0
+947   close(3<pipe:[25575]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   wait4(-1,  <unfinished ...>
+2277  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2277
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2277, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d44490, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   open("/tmp/sh-thd-15595619451645727032", O_WRONLY|O_CREAT|O_EXCL|O_TRUNC, 0600) = 3</tmp/sh-thd-15595619451645727032>
+947   write(3</tmp/sh-thd-15595619451645727032>, "machine_info.txt", 16) = 16
+947   write(3</tmp/sh-thd-15595619451645727032>, "\n", 1) = 1
+947   open("/tmp/sh-thd-15595619451645727032", O_RDONLY) = 4</tmp/sh-thd-15595619451645727032>
+947   close(3</tmp/sh-thd-15595619451645727032>) = 0
+947   unlink("/tmp/sh-thd-15595619451645727032") = 0
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(0</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(4</tmp/sh-thd-15595619451645727032 (deleted)>, 0</dev/tty1>) = 0</tmp/sh-thd-15595619451645727032 (deleted)>
+947   close(4</tmp/sh-thd-15595619451645727032 (deleted)>) = 0
+947   ioctl(0</tmp/sh-thd-15595619451645727032 (deleted)>, TCGETS, 0x7ffe93d44d40) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-15595619451645727032 (deleted)>, 0, SEEK_CUR) = 0
+947   read(0</tmp/sh-thd-15595619451645727032 (deleted)>, "machine_info.txt\n", 128) = 17
+947   ioctl(0</tmp/sh-thd-15595619451645727032 (deleted)>, TCGETS, 0x7ffe93d44d40) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-15595619451645727032 (deleted)>, 0, SEEK_CUR) = 17
+947   read(0</tmp/sh-thd-15595619451645727032 (deleted)>, "", 128) = 0
+947   dup2(10</dev/tty1>, 0</tmp/sh-thd-15595619451645727032 (deleted)>) = 0</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   close(3</dev/null>)               = 0
+947   dup2(10</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   stat("/home/user/test/machine_info.txt", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+947   lstat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+947   write(2</dev/tty1>, "ine_info.txt ", 13) = 13
+947   read(0</dev/tty1>, "\r", 1)       = 1
+947   write(2</dev/tty1>, "\n", 1)      = 1
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   stat("/home/user/bin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/home/user/.local/bin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/usr/local/sbin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/usr/local/bin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/usr/sbin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/usr/bin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/sbin/cat", 0x7ffe93d47ec0) = -1 ENOENT (No such file or directory)
+947   stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+947   stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+947   geteuid()                         = 1000
+947   getegid()                         = 1000
+947   getuid()                          = 1000
+947   getgid()                          = 1000
+947   access("/bin/cat", X_OK)          = 0
+947   stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+947   geteuid()                         = 1000
+947   getegid()                         = 1000
+947   getuid()                          = 1000
+947   getgid()                          = 1000
+947   access("/bin/cat", R_OK)          = 0
+947   stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+947   stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+947   geteuid()                         = 1000
+947   getegid()                         = 1000
+947   getuid()                          = 1000
+947   getgid()                          = 1000
+947   access("/bin/cat", X_OK)          = 0
+947   stat("/bin/cat", {st_mode=S_IFREG|0755, st_size=52080, ...}) = 0
+947   geteuid()                         = 1000
+947   getegid()                         = 1000
+947   getuid()                          = 1000
+947   getgid()                          = 1000
+947   access("/bin/cat", R_OK)          = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [INT CHLD], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [INT CHLD], NULL, 8) = 0
+947   pipe([3<pipe:[25584]>, 4<pipe:[25584]>]) = 0
+947   clone( <unfinished ...>
+2278  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2278
+2278  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   setpgid(2278, 2278 <unfinished ...>
+2278  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... setpgid resumed> )           = 0
+2278  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2278  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2278  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2278  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> [], 8) = 0
+2278  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   close(3<pipe:[25584]> <unfinished ...>
+2278  setpgid(2278, 2278 <unfinished ...>
+947   <... close resumed> )             = 0
+2278  <... setpgid resumed> )           = 0
+947   close(4<pipe:[25584]> <unfinished ...>
+2278  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU],  <unfinished ...>
+947   <... close resumed> )             = 0
+2278  <... rt_sigprocmask resumed> [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCGPGRP <unfinished ...>
+2278  ioctl(255</dev/tty1>, TIOCSPGRP, [2278] <unfinished ...>
+947   <... ioctl resumed> , [947])      = 0
+2278  <... ioctl resumed> )             = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU],  <unfinished ...>
+2278  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... rt_sigprocmask resumed> [CHLD], 8) = 0
+2278  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [2278] <unfinished ...>
+2278  close(4<pipe:[25584]> <unfinished ...>
+947   <... ioctl resumed> )             = 0
+2278  <... close resumed> )             = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+2278  read(3<pipe:[25584]>,  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2278  <... read resumed> "", 1)         = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2278  close(3<pipe:[25584]> <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2278  <... close resumed> )             = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2278  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> [], 8) = 0
+2278  <... rt_sigaction resumed> NULL, 8) = 0
+947   wait4(-1,  <unfinished ...>
+2278  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2278  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2278  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2278  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2278  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2278  open("machine_info.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</home/user/test/machine_info.txt>
+2278  dup2(3</home/user/test/machine_info.txt>, 1</dev/tty1>) = 1</home/user/test/machine_info.txt>
+2278  close(3</home/user/test/machine_info.txt>) = 0
+2278  execve("/bin/cat", ["cat", "user_file.txt"], [/* 22 vars */]) = 0
+2278  brk(NULL)                         = 0x60d000
+2278  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2278  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2278  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2278  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2278  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2278  close(3</etc/ld.so.cache>)        = 0
+2278  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2278  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2278  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2278  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2278  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2278  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+2278  mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+2278  mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+2278  mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+2278  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2278  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2278  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2278  arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+2278  mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+2278  mprotect(0x60b000, 4096, PROT_READ) = 0
+2278  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2278  munmap(0x7ffff7fee000, 35038)     = 0
+2278  brk(NULL)                         = 0x60d000
+2278  brk(0x62e000)                     = 0x62e000
+2278  open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+2278  fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+2278  mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+2278  close(3</usr/lib/locale/locale-archive>) = 0
+2278  fstat(1</home/user/test/machine_info.txt>, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+2278  open("user_file.txt", O_RDONLY)   = 3</home/user/test/user_file.txt>
+2278  fstat(3</home/user/test/user_file.txt>, {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+2278  fadvise64(3</home/user/test/user_file.txt>, 0, 0, POSIX_FADV_SEQUENTIAL) = 0
+2278  mmap(NULL, 139264, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fc9000
+2278  read(3</home/user/test/user_file.txt>, "abcdefg\n", 131072) = 8
+2278  write(1</home/user/test/machine_info.txt>, "abcdefg\n", 8) = 8
+2278  read(3</home/user/test/user_file.txt>, "", 131072) = 0
+2278  munmap(0x7ffff7fc9000, 139264)    = 0
+2278  close(3</home/user/test/user_file.txt>) = 0
+2278  close(1</home/user/test/machine_info.txt>) = 0
+2278  close(2</dev/tty1>)               = 0
+2278  exit_group(0)                     = ?
+2278  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2278
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2278, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d478d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+947   rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+947   read(0</dev/tty1>, "u", 1)        = 1
+947   write(2</dev/tty1>, "u", 1)       = 1
+947   read(0</dev/tty1>, "n", 1)        = 1
+947   write(2</dev/tty1>, "n", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "m", 1)        = 1
+947   write(2</dev/tty1>, "m", 1)       = 1
+947   read(0</dev/tty1>, "e", 1)        = 1
+947   write(2</dev/tty1>, "e", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "-", 1)        = 1
+947   write(2</dev/tty1>, "-", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, ">", 1)        = 1
+947   write(2</dev/tty1>, ">", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "m", 1)        = 1
+947   write(2</dev/tty1>, "m", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, "i", 1)        = 1
+947   write(2</dev/tty1>, "i", 1)       = 1
+947   read(0</dev/tty1>, "n", 1)        = 1
+947   write(2</dev/tty1>, "n", 1)       = 1
+947   read(0</dev/tty1>, "e", 1)        = 1
+947   write(2</dev/tty1>, "e", 1)       = 1
+947   read(0</dev/tty1>, "\t", 1)       = 1
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c3000)                    = 0x28c3000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b3000)                    = 0x28b3000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "4", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "4", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25619]>, 4<pipe:[25619]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25620]>, 6<pipe:[25620]>]) = 0
+947   clone( <unfinished ...>
+2280  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2280
+2280  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   setpgid(2280, 947 <unfinished ...>
+2280  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... setpgid resumed> )           = 0
+2280  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2280  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2280  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0},  <unfinished ...>
+2280  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigaction resumed> {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2280  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25620]> <unfinished ...>
+2280  setpgid(2280, 947 <unfinished ...>
+947   <... close resumed> )             = 0
+2280  <... setpgid resumed> )           = 0
+947   close(6<pipe:[25620]> <unfinished ...>
+2280  close(5<pipe:[25620]> <unfinished ...>
+947   <... close resumed> )             = 0
+2280  <... close resumed> )             = 0
+947   close(4<pipe:[25619]> <unfinished ...>
+2280  close(6<pipe:[25620]> <unfinished ...>
+947   <... close resumed> )             = 0
+2280  <... close resumed> )             = 0
+947   read(3<pipe:[25619]>,  <unfinished ...>
+2280  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2280  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2280  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2280  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2280  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2280  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2280  dup2(4<pipe:[25619]>, 1</dev/tty1>) = 1<pipe:[25619]>
+2280  close(4<pipe:[25619]>)            = 0
+2280  close(3<pipe:[25619]>)            = 0
+2280  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2280  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2280  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2280  brk(0x28c3000)                    = 0x28c3000
+2280  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2280  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2280  brk(0x28b3000)                    = 0x28b3000
+2280  close(3</home/user/test>)         = 0
+2280  stat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+2280  exit_group(1)                     = ?
+2280  +++ exited with 1 +++
+947   <... read resumed> "", 128)       = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2280, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+947   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WNOHANG|WSTOPPED|WCONTINUED, NULL) = 2280
+947   wait4(-1, 0x7ffe93d44690, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   close(3<pipe:[25619]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25628]>, 4<pipe:[25628]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25629]>, 6<pipe:[25629]>]) = 0
+947   clone( <unfinished ...>
+2281  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2281
+2281  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   setpgid(2281, 947 <unfinished ...>
+2281  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... setpgid resumed> )           = 0
+2281  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2281  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2281  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0},  <unfinished ...>
+2281  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   <... rt_sigaction resumed> {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2281  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25629]> <unfinished ...>
+2281  setpgid(2281, 947 <unfinished ...>
+947   <... close resumed> )             = 0
+2281  <... setpgid resumed> )           = 0
+947   close(6<pipe:[25629]> <unfinished ...>
+2281  close(5<pipe:[25629]> <unfinished ...>
+947   <... close resumed> )             = 0
+2281  <... close resumed> )             = 0
+947   close(4<pipe:[25628]> <unfinished ...>
+2281  close(6<pipe:[25629]> <unfinished ...>
+947   <... close resumed> )             = 0
+2281  <... close resumed> )             = 0
+947   read(3<pipe:[25628]>,  <unfinished ...>
+2281  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2281  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2281  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2281  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2281  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2281  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2281  dup2(4<pipe:[25628]>, 1</dev/tty1>) = 1<pipe:[25628]>
+2281  close(4<pipe:[25628]>)            = 0
+2281  close(3<pipe:[25628]>)            = 0
+2281  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2281  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2281  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2281  brk(0x28c3000)                    = 0x28c3000
+2281  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2281  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2281  brk(0x28b3000)                    = 0x28b3000
+2281  close(3</home/user/test>)         = 0
+2281  write(1<pipe:[25628]>, "machine_info.txt\n", 17) = 17
+947   <... read resumed> "machine_info.txt\n", 128) = 17
+2281  exit_group(0)                     = ?
+947   read(3<pipe:[25628]>,  <unfinished ...>
+2281  +++ exited with 0 +++
+947   <... read resumed> "", 128)       = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2281, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG|WSTOPPED|WCONTINUED, NULL) = 2281
+947   wait4(-1, 0x7ffe93d445d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   close(3<pipe:[25628]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   open("/tmp/sh-thd-12744494828928198846", O_WRONLY|O_CREAT|O_EXCL|O_TRUNC, 0600) = 3</tmp/sh-thd-12744494828928198846>
+947   write(3</tmp/sh-thd-12744494828928198846>, "machine_info.txt", 16) = 16
+947   write(3</tmp/sh-thd-12744494828928198846>, "\n", 1) = 1
+947   open("/tmp/sh-thd-12744494828928198846", O_RDONLY) = 4</tmp/sh-thd-12744494828928198846>
+947   close(3</tmp/sh-thd-12744494828928198846>) = 0
+947   unlink("/tmp/sh-thd-12744494828928198846") = 0
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(0</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(4</tmp/sh-thd-12744494828928198846 (deleted)>, 0</dev/tty1>) = 0</tmp/sh-thd-12744494828928198846 (deleted)>
+947   close(4</tmp/sh-thd-12744494828928198846 (deleted)>) = 0
+947   ioctl(0</tmp/sh-thd-12744494828928198846 (deleted)>, TCGETS, 0x7ffe93d44d40) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-12744494828928198846 (deleted)>, 0, SEEK_CUR) = 0
+947   read(0</tmp/sh-thd-12744494828928198846 (deleted)>, "machine_info.txt\n", 128) = 17
+947   ioctl(0</tmp/sh-thd-12744494828928198846 (deleted)>, TCGETS, 0x7ffe93d44d40) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-12744494828928198846 (deleted)>, 0, SEEK_CUR) = 17
+947   read(0</tmp/sh-thd-12744494828928198846 (deleted)>, "", 128) = 0
+947   dup2(10</dev/tty1>, 0</tmp/sh-thd-12744494828928198846 (deleted)>) = 0</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   close(3</dev/null>)               = 0
+947   dup2(10</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   stat("/home/user/test/machine_info.txt", {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+947   lstat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=8, ...}) = 0
+947   write(2</dev/tty1>, "_info.txt ", 10) = 10
+947   read(0</dev/tty1>, "\r", 1)       = 1
+947   write(2</dev/tty1>, "\n", 1)      = 1
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [INT CHLD], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [INT CHLD], NULL, 8) = 0
+947   pipe([3<pipe:[25637]>, 4<pipe:[25637]>]) = 0
+947   clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2282
+947   setpgid(2282, 2282)               = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   close(3<pipe:[25637]>)            = 0
+947   close(4<pipe:[25637]>)            = 0
+947   ioctl(255</dev/tty1>, TIOCGPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [2282]) = 0
+2282  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+947   rt_sigprocmask(SIG_SETMASK, [CHLD],  <unfinished ...>
+2282  <... rt_sigprocmask resumed> NULL, 8) = 0
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2282  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2282  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2282  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2282  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   <... rt_sigprocmask resumed> [], 8) = 0
+2282  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0},  <unfinished ...>
+947   wait4(-1,  <unfinished ...>
+2282  <... rt_sigaction resumed> {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2282  setpgid(2282, 2282)               = 0
+2282  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+2282  ioctl(255</dev/tty1>, TIOCSPGRP, [2282]) = 0
+2282  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2282  close(4<pipe:[25637]>)            = 0
+2282  read(3<pipe:[25637]>, "", 1)      = 0
+2282  close(3<pipe:[25637]>)            = 0
+2282  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2282  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2282  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2282  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2282  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2282  open("machine_info.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</home/user/test/machine_info.txt>
+2282  dup2(3</home/user/test/machine_info.txt>, 1</dev/tty1>) = 1</home/user/test/machine_info.txt>
+2282  close(3</home/user/test/machine_info.txt>) = 0
+2282  execve("/bin/uname", ["uname", "-a"], [/* 22 vars */]) = 0
+2282  brk(NULL)                         = 0x608000
+2282  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2282  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2282  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2282  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2282  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2282  close(3</etc/ld.so.cache>)        = 0
+2282  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2282  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2282  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2282  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2282  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2282  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+2282  mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+2282  mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+2282  mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+2282  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2282  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2282  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2282  arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+2282  mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+2282  mprotect(0x606000, 4096, PROT_READ) = 0
+2282  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2282  munmap(0x7ffff7fee000, 35038)     = 0
+2282  brk(NULL)                         = 0x608000
+2282  brk(0x629000)                     = 0x629000
+2282  open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+2282  fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+2282  mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+2282  close(3</usr/lib/locale/locale-archive>) = 0
+2282  uname({sysname="Linux", nodename="ubuntu", ...}) = 0
+2282  fstat(1</home/user/test/machine_info.txt>, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+2282  uname({sysname="Linux", nodename="ubuntu", ...}) = 0
+2282  uname({sysname="Linux", nodename="ubuntu", ...}) = 0
+2282  write(1</home/user/test/machine_info.txt>, "Linux ubuntu 4.4.0-131-generic #"..., 107) = 107
+2282  close(1</home/user/test/machine_info.txt>) = 0
+2282  close(2</dev/tty1>)               = 0
+2282  exit_group(0)                     = ?
+2282  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2282
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2282, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d478d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+947   rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+947   read(0</dev/tty1>, "i", 1)        = 1
+947   write(2</dev/tty1>, "i", 1)       = 1
+947   read(0</dev/tty1>, "p", 1)        = 1
+947   write(2</dev/tty1>, "p", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "d", 1)        = 1
+947   write(2</dev/tty1>, "d", 1)       = 1
+947   read(0</dev/tty1>, "d", 1)        = 1
+947   write(2</dev/tty1>, "d", 1)       = 1
+947   read(0</dev/tty1>, "r", 1)        = 1
+947   write(2</dev/tty1>, "r", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "-", 1)        = 1
+947   write(2</dev/tty1>, "-", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "\177", 1)     = 1
+947   write(2</dev/tty1>, "\10\33[K", 4) = 4
+947   read(0</dev/tty1>, "\177", 1)     = 1
+947   write(2</dev/tty1>, "\10\33[K", 4) = 4
+947   read(0</dev/tty1>, "\177", 1)     = 1
+947   write(2</dev/tty1>, "\10\33[K", 4) = 4
+947   read(0</dev/tty1>, ">", 1)        = 1
+947   write(2</dev/tty1>, ">", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "m", 1)        = 1
+947   write(2</dev/tty1>, "m", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, "\t", 1)       = 1
+947   stat("/usr/share/bash-completion/completions/ip", {st_mode=S_IFREG|0644, st_size=9766, ...}) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   open("/usr/share/bash-completion/completions/ip", O_RDONLY) = 3</usr/share/bash-completion/completions/ip>
+947   fstat(3</usr/share/bash-completion/completions/ip>, {st_mode=S_IFREG|0644, st_size=9766, ...}) = 0
+947   read(3</usr/share/bash-completion/completions/ip>, "# ip(8) completion              "..., 9766) = 9766
+947   close(3</usr/share/bash-completion/completions/ip>) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c4000)                    = 0x28c4000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c4000)                    = 0x28c4000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c4000)                    = 0x28c4000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c4000)                    = 0x28c4000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "4", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "4", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25651]>, 4<pipe:[25651]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25652]>, 6<pipe:[25652]>]) = 0
+947   clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2284
+947   setpgid(2284, 947)                = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25652]>)            = 0
+947   close(6<pipe:[25652]>)            = 0
+947   close(4<pipe:[25651]>)            = 0
+947   read(3<pipe:[25651]>,  <unfinished ...>
+2284  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2284  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  setpgid(2284, 947)                = 0
+2284  close(5<pipe:[25652]>)            = 0
+2284  close(6<pipe:[25652]>)            = 0
+2284  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2284  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2284  dup2(4<pipe:[25651]>, 1</dev/tty1>) = 1<pipe:[25651]>
+2284  close(4<pipe:[25651]>)            = 0
+2284  close(3<pipe:[25651]>)            = 0
+2284  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2284  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2284  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2284  brk(0x28c4000)                    = 0x28c4000
+2284  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2284  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2284  brk(0x28b4000)                    = 0x28b4000
+2284  close(3</home/user/test>)         = 0
+2284  stat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=107, ...}) = 0
+2284  exit_group(1)                     = ?
+947   <... read resumed> "", 128)       = 0
+947   close(3<pipe:[25651]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   wait4(-1,  <unfinished ...>
+2284  +++ exited with 1 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WSTOPPED|WCONTINUED, NULL) = 2284
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2284, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d44250, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25660]>, 4<pipe:[25660]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25661]>, 6<pipe:[25661]>]) = 0
+947   clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2285
+947   setpgid(2285, 947)                = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25661]>)            = 0
+947   close(6<pipe:[25661]>)            = 0
+947   close(4<pipe:[25660]>)            = 0
+947   read(3<pipe:[25660]>,  <unfinished ...>
+2285  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2285  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  setpgid(2285, 947)                = 0
+2285  close(5<pipe:[25661]>)            = 0
+2285  close(6<pipe:[25661]>)            = 0
+2285  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2285  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2285  dup2(4<pipe:[25660]>, 1</dev/tty1>) = 1<pipe:[25660]>
+2285  close(4<pipe:[25660]>)            = 0
+2285  close(3<pipe:[25660]>)            = 0
+2285  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2285  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2285  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2285  brk(0x28c4000)                    = 0x28c4000
+2285  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2285  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2285  brk(0x28b4000)                    = 0x28b4000
+2285  close(3</home/user/test>)         = 0
+2285  write(1<pipe:[25660]>, "machine_info.txt\n", 17) = 17
+947   <... read resumed> "machine_info.txt\n", 128) = 17
+947   read(3<pipe:[25660]>,  <unfinished ...>
+2285  exit_group(0)                     = ?
+947   <... read resumed> "", 128)       = 0
+947   close(3<pipe:[25660]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   wait4(-1,  <unfinished ...>
+2285  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2285
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2285, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d44190, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   open("/tmp/sh-thd-7042245585197944667", O_WRONLY|O_CREAT|O_EXCL|O_TRUNC, 0600) = 3</tmp/sh-thd-7042245585197944667>
+947   write(3</tmp/sh-thd-7042245585197944667>, "machine_info.txt", 16) = 16
+947   write(3</tmp/sh-thd-7042245585197944667>, "\n", 1) = 1
+947   open("/tmp/sh-thd-7042245585197944667", O_RDONLY) = 4</tmp/sh-thd-7042245585197944667>
+947   close(3</tmp/sh-thd-7042245585197944667>) = 0
+947   unlink("/tmp/sh-thd-7042245585197944667") = 0
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(0</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(4</tmp/sh-thd-7042245585197944667 (deleted)>, 0</dev/tty1>) = 0</tmp/sh-thd-7042245585197944667 (deleted)>
+947   close(4</tmp/sh-thd-7042245585197944667 (deleted)>) = 0
+947   ioctl(0</tmp/sh-thd-7042245585197944667 (deleted)>, TCGETS, 0x7ffe93d44a40) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-7042245585197944667 (deleted)>, 0, SEEK_CUR) = 0
+947   read(0</tmp/sh-thd-7042245585197944667 (deleted)>, "machine_info.txt\n", 128) = 17
+947   ioctl(0</tmp/sh-thd-7042245585197944667 (deleted)>, TCGETS, 0x7ffe93d44a40) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-7042245585197944667 (deleted)>, 0, SEEK_CUR) = 17
+947   read(0</tmp/sh-thd-7042245585197944667 (deleted)>, "", 128) = 0
+947   dup2(10</dev/tty1>, 0</tmp/sh-thd-7042245585197944667 (deleted)>) = 0</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   close(3</dev/null>)               = 0
+947   dup2(10</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   stat("/home/user/test/machine_info.txt", {st_mode=S_IFREG|0664, st_size=107, ...}) = 0
+947   lstat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=107, ...}) = 0
+947   write(2</dev/tty1>, "ine_info.txt ", 13) = 13
+947   read(0</dev/tty1>, "\r", 1)       = 1
+947   write(2</dev/tty1>, "\n", 1)      = 1
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [INT CHLD], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [INT CHLD], NULL, 8) = 0
+947   pipe([3<pipe:[25669]>, 4<pipe:[25669]>]) = 0
+947   clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2286
+947   setpgid(2286, 2286)               = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   close(3<pipe:[25669]>)            = 0
+947   close(4<pipe:[25669]>)            = 0
+947   ioctl(255</dev/tty1>, TIOCGPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [2286]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   wait4(-1,  <unfinished ...>
+2286  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2286  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2286  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2286  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2286  setpgid(2286, 2286)               = 0
+2286  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+2286  ioctl(255</dev/tty1>, TIOCSPGRP, [2286]) = 0
+2286  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2286  close(4<pipe:[25669]>)            = 0
+2286  read(3<pipe:[25669]>, "", 1)      = 0
+2286  close(3<pipe:[25669]>)            = 0
+2286  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2286  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2286  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2286  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2286  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2286  open("machine_info.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</home/user/test/machine_info.txt>
+2286  dup2(3</home/user/test/machine_info.txt>, 1</dev/tty1>) = 1</home/user/test/machine_info.txt>
+2286  close(3</home/user/test/machine_info.txt>) = 0
+2286  execve("/sbin/ip", ["ip", "addr"], [/* 22 vars */]) = 0
+2286  brk(NULL)                         = 0x662000
+2286  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2286  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2286  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2286  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2286  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2286  close(3</etc/ld.so.cache>)        = 0
+2286  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2286  open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libdl-2.23.so>
+2286  read(3</lib/x86_64-linux-gnu/libdl-2.23.so>, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
+2286  fstat(3</lib/x86_64-linux-gnu/libdl-2.23.so>, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0
+2286  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2286  mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0) = 0x7ffff7bd3000
+2286  mprotect(0x7ffff7bd6000, 2093056, PROT_NONE) = 0
+2286  mmap(0x7ffff7dd5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libdl-2.23.so>, 0x2000) = 0x7ffff7dd5000
+2286  close(3</lib/x86_64-linux-gnu/libdl-2.23.so>) = 0
+2286  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2286  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2286  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2286  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2286  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7809000
+2286  mprotect(0x7ffff79c9000, 2097152, PROT_NONE) = 0
+2286  mmap(0x7ffff7bc9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7bc9000
+2286  mmap(0x7ffff7bcf000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7bcf000
+2286  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2286  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2286  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2286  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fea000
+2286  arch_prctl(ARCH_SET_FS, 0x7ffff7feb700) = 0
+2286  mprotect(0x7ffff7bc9000, 16384, PROT_READ) = 0
+2286  mprotect(0x7ffff7dd5000, 4096, PROT_READ) = 0
+2286  mprotect(0x656000, 4096, PROT_READ) = 0
+2286  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2286  munmap(0x7ffff7fee000, 35038)     = 0
+2286  socket(PF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 3<socket:[25676]>
+2286  setsockopt(3<socket:[25676]>, SOL_SOCKET, SO_SNDBUF, [32768], 4) = 0
+2286  setsockopt(3<socket:[25676]>, SOL_SOCKET, SO_RCVBUF, [1048576], 4) = 0
+2286  bind(3<socket:[25676]>, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+2286  getsockname(3<socket:[25676]>, {sa_family=AF_NETLINK, pid=2286, groups=00000000}, [12]) = 0
+2286  sendto(3<socket:[25676]>, "(\0\0\0\22\0\1\0039\255\232[\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 40, 0, NULL, 0) = 40
+2286  recvmsg(3<socket:[25676]>, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\234\4\0\0\20\0\2\0009\255\232[\356\10\0\0\0\0\4\3\1\0\0\0I\0\1\0\0\0\0\0"..., 32768}], msg_controllen=0, msg_flags=0}, 0) = 2376
+2286  brk(NULL)                         = 0x662000
+2286  brk(0x683000)                     = 0x683000
+2286  recvmsg(3<socket:[25676]>, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0009\255\232[\356\10\0\0\0\0\0\0", 32768}], msg_controllen=0, msg_flags=0}, 0) = 20
+2286  sendto(3<socket:[25676]>, "(\0\0\0\26\0\1\3:\255\232[\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 40, 0, NULL, 0) = 40
+2286  recvmsg(3<socket:[25676]>, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0:\255\232[\356\10\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 32768}], msg_controllen=0, msg_flags=0}, 0) = 164
+2286  recvmsg(3<socket:[25676]>, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0:\255\232[\356\10\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 32768}], msg_controllen=0, msg_flags=0}, 0) = 144
+2286  recvmsg(3<socket:[25676]>, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0:\255\232[\356\10\0\0\0\0\0\0", 32768}], msg_controllen=0, msg_flags=0}, 0) = 20
+2286  fstat(1</home/user/test/machine_info.txt>, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0
+2286  open("/etc/iproute2/group", O_RDONLY) = 4</etc/iproute2/group>
+2286  fstat(4</etc/iproute2/group>, {st_mode=S_IFREG|0644, st_size=31, ...}) = 0
+2286  read(4</etc/iproute2/group>, "# device group names\n0\tdefault\n", 4096) = 31
+2286  read(4</etc/iproute2/group>, "", 4096) = 0
+2286  close(4</etc/iproute2/group>)     = 0
+2286  write(1</home/user/test/machine_info.txt>, "1: lo: <LOOPBACK,UP,LOWER_UP> mt"..., 147) = 147
+2286  open("/etc/iproute2/rt_scopes", O_RDONLY) = 4</etc/iproute2/rt_scopes>
+2286  fstat(4</etc/iproute2/rt_scopes>, {st_mode=S_IFREG|0644, st_size=92, ...}) = 0
+2286  read(4</etc/iproute2/rt_scopes>, "#\n# reserved values\n#\n0\tglobal\n2"..., 4096) = 92
+2286  read(4</etc/iproute2/rt_scopes>, "", 4096) = 0
+2286  close(4</etc/iproute2/rt_scopes>) = 0
+2286  write(1</home/user/test/machine_info.txt>, "    inet 127.0.0.1/8 scope host "..., 82) = 82
+2286  write(1</home/user/test/machine_info.txt>, "    inet6 ::1/128 scope host \n  "..., 77) = 77
+2286  write(1</home/user/test/machine_info.txt>, "2: ens33: <BROADCAST,MULTICAST,U"..., 158) = 158
+2286  write(1</home/user/test/machine_info.txt>, "    inet 192.168.12.131/24 brd 1"..., 112) = 112
+2286  write(1</home/user/test/machine_info.txt>, "    inet6 fe80::20c:29ff:feb9:b1"..., 96) = 96
+2286  exit_group(0)                     = ?
+2286  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2286
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2286, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d478d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   stat("/var/mail/user", 0x7ffe93d47290) = -1 ENOENT (No such file or directory)
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+947   rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, "e", 1)        = 1
+947   write(2</dev/tty1>, "e", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "d", 1)        = 1
+947   write(2</dev/tty1>, "d", 1)       = 1
+947   read(0</dev/tty1>, " ", 1)        = 1
+947   write(2</dev/tty1>, " ", 1)       = 1
+947   read(0</dev/tty1>, "m", 1)        = 1
+947   write(2</dev/tty1>, "m", 1)       = 1
+947   read(0</dev/tty1>, "a", 1)        = 1
+947   write(2</dev/tty1>, "a", 1)       = 1
+947   read(0</dev/tty1>, "c", 1)        = 1
+947   write(2</dev/tty1>, "c", 1)       = 1
+947   read(0</dev/tty1>, "h", 1)        = 1
+947   write(2</dev/tty1>, "h", 1)       = 1
+947   read(0</dev/tty1>, "\t", 1)       = 1
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c4000)                    = 0x28c4000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+947   fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   brk(0x28c4000)                    = 0x28c4000
+947   getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+947   getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+947   brk(0x28b4000)                    = 0x28b4000
+947   close(3</home/user/test>)         = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "2", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(1</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(1</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 1</dev/tty1>)  = 1</dev/null>
+947   close(3</dev/null>)               = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 11</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(11</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(1</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   write(1</dev/null>, "2", 1)       = 1
+947   dup2(11</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(11</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(11</dev/tty1>)              = 0
+947   dup2(10</dev/tty1>, 1</dev/null>) = 1</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25704]>, 4<pipe:[25704]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25705]>, 6<pipe:[25705]>]) = 0
+947   clone( <unfinished ...>
+2288  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2288  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  setpgid(2288, 947)                = 0
+2288  close(5<pipe:[25705]>)            = 0
+2288  close(6<pipe:[25705]>)            = 0
+2288  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2288  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2288  dup2(4<pipe:[25704]>, 1</dev/tty1>) = 1<pipe:[25704]>
+2288  close(4<pipe:[25704]>)            = 0
+2288  close(3<pipe:[25704]>)            = 0
+2288  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2288  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2288  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2288  brk(0x28c4000)                    = 0x28c4000
+2288  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2288  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2288  brk(0x28b4000)                    = 0x28b4000
+2288  close(3</home/user/test>)         = 0
+2288  stat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=672, ...}) = 0
+2288  exit_group(1)                     = ?
+2288  +++ exited with 1 +++
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2288
+947   setpgid(2288, 947)                = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2288, si_uid=1000, si_status=1, si_utime=0, si_stime=0} ---
+947   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 1}], WNOHANG|WSTOPPED|WCONTINUED, NULL) = 2288
+947   wait4(-1, 0x7ffe93d45410, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25705]>)            = 0
+947   close(6<pipe:[25705]>)            = 0
+947   close(4<pipe:[25704]>)            = 0
+947   read(3<pipe:[25704]>, "", 128)    = 0
+947   close(3<pipe:[25704]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+947   pipe([3<pipe:[25713]>, 4<pipe:[25713]>]) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   pipe([5<pipe:[25714]>, 6<pipe:[25714]>]) = 0
+947   clone( <unfinished ...>
+2289  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2289  rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  setpgid(2289, 947)                = 0
+2289  close(5<pipe:[25714]>)            = 0
+2289  close(6<pipe:[25714]>)            = 0
+2289  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2289  rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2289  dup2(4<pipe:[25713]>, 1</dev/tty1>) = 1<pipe:[25713]>
+2289  close(4<pipe:[25713]>)            = 0
+2289  close(3<pipe:[25713]>)            = 0
+2289  rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+2289  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3</home/user/test>
+2289  fstat(3</home/user/test>, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+2289  brk(0x28c4000)                    = 0x28c4000
+2289  getdents(3</home/user/test>, /* 16 entries */, 32768) = 544
+2289  getdents(3</home/user/test>, /* 0 entries */, 32768) = 0
+2289  brk(0x28b4000)                    = 0x28b4000
+2289  close(3</home/user/test>)         = 0
+2289  write(1<pipe:[25713]>, "machine_info.txt\n", 17) = 17
+2289  exit_group(0)                     = ?
+2289  +++ exited with 0 +++
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2289
+947   setpgid(2289, 947)                = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2289, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG|WSTOPPED|WCONTINUED, NULL) = 2289
+947   wait4(-1, 0x7ffe93d45310, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   close(5<pipe:[25714]>)            = 0
+947   close(6<pipe:[25714]>)            = 0
+947   close(4<pipe:[25713]>)            = 0
+947   read(3<pipe:[25713]>, "machine_info.txt\n", 128) = 17
+947   read(3<pipe:[25713]>, "", 128)    = 0
+947   close(3<pipe:[25713]>)            = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   open("/tmp/sh-thd-14084491169441769759", O_WRONLY|O_CREAT|O_EXCL|O_TRUNC, 0600) = 3</tmp/sh-thd-14084491169441769759>
+947   write(3</tmp/sh-thd-14084491169441769759>, "machine_info.txt", 16) = 16
+947   write(3</tmp/sh-thd-14084491169441769759>, "\n", 1) = 1
+947   open("/tmp/sh-thd-14084491169441769759", O_RDONLY) = 4</tmp/sh-thd-14084491169441769759>
+947   close(3</tmp/sh-thd-14084491169441769759>) = 0
+947   unlink("/tmp/sh-thd-14084491169441769759") = 0
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(0</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(0</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(4</tmp/sh-thd-14084491169441769759 (deleted)>, 0</dev/tty1>) = 0</tmp/sh-thd-14084491169441769759 (deleted)>
+947   close(4</tmp/sh-thd-14084491169441769759 (deleted)>) = 0
+947   ioctl(0</tmp/sh-thd-14084491169441769759 (deleted)>, TCGETS, 0x7ffe93d45bd0) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-14084491169441769759 (deleted)>, 0, SEEK_CUR) = 0
+947   read(0</tmp/sh-thd-14084491169441769759 (deleted)>, "machine_info.txt\n", 128) = 17
+947   ioctl(0</tmp/sh-thd-14084491169441769759 (deleted)>, TCGETS, 0x7ffe93d45bd0) = -1 ENOTTY (Inappropriate ioctl for device)
+947   lseek(0</tmp/sh-thd-14084491169441769759 (deleted)>, 0, SEEK_CUR) = 17
+947   read(0</tmp/sh-thd-14084491169441769759 (deleted)>, "", 128) = 0
+947   dup2(10</dev/tty1>, 0</tmp/sh-thd-14084491169441769759 (deleted)>) = 0</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3</dev/null>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(2</dev/tty1>, F_DUPFD, 10)  = 10</dev/tty1>
+947   fcntl(2</dev/tty1>, F_GETFD)      = 0
+947   fcntl(10</dev/tty1>, F_SETFD, FD_CLOEXEC) = 0
+947   dup2(3</dev/null>, 2</dev/tty1>)  = 2</dev/null>
+947   close(3</dev/null>)               = 0
+947   dup2(10</dev/tty1>, 2</dev/null>) = 2</dev/tty1>
+947   fcntl(10</dev/tty1>, F_GETFD)     = 0x1 (flags FD_CLOEXEC)
+947   close(10</dev/tty1>)              = 0
+947   stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+947   stat("/home/user/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+947   stat("/home/user/test/machine_info.txt", {st_mode=S_IFREG|0664, st_size=672, ...}) = 0
+947   lstat("machine_info.txt", {st_mode=S_IFREG|0664, st_size=672, ...}) = 0
+947   write(2</dev/tty1>, "ine_info.txt ", 13) = 13
+947   read(0</dev/tty1>, "\r", 1)       = 1
+947   write(2</dev/tty1>, "\n", 1)      = 1
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [INT CHLD], 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [INT CHLD], NULL, 8) = 0
+947   pipe([3<pipe:[25722]>, 4<pipe:[25722]>]) = 0
+947   clone( <unfinished ...>
+2290  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2290  rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2290  rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2290  rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2290  setpgid(2290, 2290)               = 0
+2290  rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+2290  ioctl(255</dev/tty1>, TIOCSPGRP, [2290]) = 0
+2290  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+2290  close(4<pipe:[25722]>)            = 0
+2290  read(3<pipe:[25722]>,  <unfinished ...>
+947   <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f243cfb19d0) = 2290
+947   setpgid(2290, 2290)               = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+947   close(3<pipe:[25722]>)            = 0
+947   close(4<pipe:[25722]> <unfinished ...>
+2290  <... read resumed> "", 1)         = 0
+2290  close(3<pipe:[25722]>)            = 0
+2290  rt_sigaction(SIGHUP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGILL, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGTRAP, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGABRT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGFPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGBUS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGSEGV, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGSYS, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGPIPE, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGXCPU, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGXFSZ, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGVTALRM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGUSR1, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGUSR2, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, NULL, 8) = 0
+2290  rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2290  rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+2290  rt_sigaction(SIGTERM, {SIG_DFL, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2290  rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+2290  execve("/usr/bin/head", ["head", "machine_info.txt"], [/* 22 vars */]) = 0
+2290  brk(NULL)                         = 0x60a000
+2290  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2290  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2290  open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3</etc/ld.so.cache>
+2290  fstat(3</etc/ld.so.cache>, {st_mode=S_IFREG|0644, st_size=35038, ...}) = 0
+2290  mmap(NULL, 35038, PROT_READ, MAP_PRIVATE, 3</etc/ld.so.cache>, 0) = 0x7ffff7fee000
+2290  close(3</etc/ld.so.cache>)        = 0
+2290  access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+2290  open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3</lib/x86_64-linux-gnu/libc-2.23.so>
+2290  read(3</lib/x86_64-linux-gnu/libc-2.23.so>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+2290  fstat(3</lib/x86_64-linux-gnu/libc-2.23.so>, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+2290  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fed000
+2290  mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0) = 0x7ffff7a0d000
+2290  mprotect(0x7ffff7bcd000, 2097152, PROT_NONE) = 0
+2290  mmap(0x7ffff7dcd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3</lib/x86_64-linux-gnu/libc-2.23.so>, 0x1c0000) = 0x7ffff7dcd000
+2290  mmap(0x7ffff7dd3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffff7dd3000
+2290  close(3</lib/x86_64-linux-gnu/libc-2.23.so>) = 0
+2290  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7fec000
+2290  mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffff7feb000
+2290  arch_prctl(ARCH_SET_FS, 0x7ffff7fec700) = 0
+2290  mprotect(0x7ffff7dcd000, 16384, PROT_READ) = 0
+2290  mprotect(0x608000, 4096, PROT_READ) = 0
+2290  mprotect(0x7ffff7ffc000, 4096, PROT_READ) = 0
+2290  munmap(0x7ffff7fee000, 35038)     = 0
+2290  brk(NULL)                         = 0x60a000
+2290  brk(0x62b000)                     = 0x62b000
+2290  open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3</usr/lib/locale/locale-archive>
+2290  fstat(3</usr/lib/locale/locale-archive>, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0
+2290  mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3</usr/lib/locale/locale-archive>, 0) = 0x7ffff7735000
+2290  close(3</usr/lib/locale/locale-archive>) = 0
+2290  open("machine_info.txt", O_RDONLY) = 3</home/user/test/machine_info.txt>
+2290  read(3</home/user/test/machine_info.txt>, "1: lo: <LOOPBACK,UP,LOWER_UP> mt"..., 8192) = 672
+2290  lseek(3</home/user/test/machine_info.txt>, -96, SEEK_CUR) = 576
+2290  fstat(1</dev/tty1>, {st_mode=S_IFCHR|0600, st_rdev=makedev(4, 1), ...}) = 0
+2290  ioctl(1</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+2290  write(1</dev/tty1>, "1: lo: <LOOPBACK,UP,LOWER_UP> mt"..., 89) = 89
+2290  write(1</dev/tty1>, "    link/loopback 00:00:00:00:00"..., 58) = 58
+2290  write(1</dev/tty1>, "    inet 127.0.0.1/8 scope host "..., 35) = 35
+2290  write(1</dev/tty1>, "       valid_lft forever preferr"..., 47) = 47
+2290  write(1</dev/tty1>, "    inet6 ::1/128 scope host \n", 30) = 30
+947   <... close resumed> )             = 0
+2290  write(1</dev/tty1>, "       valid_lft forever preferr"..., 47 <unfinished ...>
+947   ioctl(255</dev/tty1>, TIOCGPGRP <unfinished ...>
+2290  <... write resumed> )             = 47
+947   <... ioctl resumed> , [2290])     = 0
+2290  write(1</dev/tty1>, "2: ens33: <BROADCAST,MULTICAST,U"..., 103 <unfinished ...>
+947   rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+2290  <... write resumed> )             = 103
+947   <... rt_sigprocmask resumed> NULL, 8) = 0
+2290  write(1</dev/tty1>, "    link/ether 00:0c:29:b9:0b:10"..., 55 <unfinished ...>
+947   rt_sigprocmask(SIG_BLOCK, [CHLD],  <unfinished ...>
+2290  <... write resumed> )             = 55
+947   <... rt_sigprocmask resumed> [], 8) = 0
+2290  write(1</dev/tty1>, "    inet 192.168.12.131/24 brd 1"..., 65 <unfinished ...>
+947   wait4(-1,  <unfinished ...>
+2290  <... write resumed> )             = 65
+2290  write(1</dev/tty1>, "       valid_lft forever preferr"..., 47) = 47
+2290  close(3</home/user/test/machine_info.txt>) = 0
+2290  close(1</dev/tty1>)               = 0
+2290  close(2</dev/tty1>)               = 0
+2290  exit_group(0)                     = ?
+2290  +++ exited with 0 +++
+947   <... wait4 resumed> [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 2290
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+947   ioctl(255</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(255</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2290, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+947   wait4(-1, 0x7ffe93d478d0, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+947   rt_sigreturn({mask=[]})           = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+947   ioctl(255</dev/tty1>, TIOCSPGRP, [947]) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGINT, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   ioctl(0</dev/tty1>, TIOCGWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TIOCSWINSZ, {ws_row=37, ws_col=100, ws_xpixel=0, ws_ypixel=0}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+947   ioctl(0</dev/tty1>, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+947   ioctl(0</dev/tty1>, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+947   rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+947   rt_sigaction(SIGINT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f790, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTERM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45f2e0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGHUP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGALRM, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {0x45fa10, [HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTSTP, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTOU, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigaction(SIGTTIN, {SIG_IGN, [], SA_RESTORER, 0x7f243c5d64b0}, {0x4aceb0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+947   rt_sigaction(SIGWINCH, {0x4ac4d0, [], SA_RESTORER|SA_RESTART, 0x7f243c5d64b0}, {0x45f2d0, [], SA_RESTORER, 0x7f243c5d64b0}, 8) = 0
+947   write(2</dev/tty1>, "user@ubuntu:~/test$ ", 20) = 20
+947   read(0</dev/tty1>,  <detached ...>
